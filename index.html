@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- undefined -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <!-- undefined -->
+            Nom：<input v-model="name">
+            Cours：<input v-model="Cours">
+            undefined：<input v-model="acceptancePeriod">
+            <br>
+            <!-- undefined -->
+            <button v-on:click="addStudent">undefined</button>
+            <ul>
+                <!-- undefined -->
+                <!-- undefined -->
+                <li v-for="student in students" v-bind:key="student.id">
+                    <!-- undefined -->
+                    ID {{student.id}} /
+                    Nom {{student.name}} /
+                    Cours {{student.Cours}} /
+                    undefined {{student.acceptancePeriod}}
+                </li>
+            </ul>
+        </div>
+        <script src="vue.js"></script>
+    </body>
+</html>
